@@ -1,0 +1,20 @@
+<LinearLayout
+
+    <EditText
+        android:id="@+id/Edit1"
+        android:layout_weight="1"			
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="숫자1" />
+
+    <EditText
+        android:id="@+id/Edit2"
+        android:layout_weight="1"		//화면에서 차지하는 비율%을 설정할수 있다.
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="숫자2" />		//허연글씨로 흰트나옴 뭐적을지
+
+LinearLayout/>
+

@@ -1,0 +1,48 @@
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"		
+
+    android:orientation="vertical" 		//오리엔탈 vertical-수직
+    android:padding="30dp" >	//가장자리로부터 간격설정
+
+    <Button
+        android:layout_width="match_parent"		//위젯의 넓이	//"1080px" 처럼 픽셀로도 설정가능
+        android:layout_height="wrap_content"		//위젯의 높이
+        android:text="버튼입니다" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"	//백그라운드 지정시 사용
+        android:layout_margin="20dp"		//위젯과  위젯 사이에 여유를 둘때 마진사용
+        android:visibility="invisible"		//invisible은 안보이게 할때 사용 gone은 자리까지 안보이게 날림
+        android:enabled="false"		//위젯을 못 사용하게 할때 사용한다. 기본값 : true(가능)
+        android:clickable="false"		//클릭이나 터치를 못하게 할때 사용한다. 기본값 : true(가능)
+        android:rotation="45"		//위젯을 회전시켜 출력할때사용 값은 각도이다.
+        android:text="버튼입니다" />		
+
+</LinearLayout>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Java 코드 작성하는 세단계
+
+public class MainActivity extends AppCompatActivity {
+
+    Button mybutton;						//1단계 변수선언
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        mybutton = (Button)findViewById(R.id.button);			//2단계 변수에 위젯 할당
+        
+        mybutton.setOnClickListener(new View.OnClickListener() {		//3단계 버튼을 클릭할때 동작하는 클래스 정의 (자동완성이용)
+            @Override
+            public void onClick(View view) {
+                //이부분에 동작 내용을 코딩
+            }
+        });
+    }
+}

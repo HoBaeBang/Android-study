@@ -1,0 +1,18 @@
+<LinearLayout 
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"		
+        android:text="textSize 속성"	
+        android:textColor="#00FF00"			//글자 색 설정
+        android:textStyle="bold|italic"			//글씨체 설정 (지금은 이테리체로 되있음)
+        android:typeface="serif"			//글꼴을 결정하고 디폴트는 nomal이다.
+        android:singleLine="true"			//글이 길어 넘어갈경우 한줄로만 출력하고 ...으로 표시 디폴트false
+        android:textSize="30dp" />			//글자의 크기를 설정
+
+
+</LinearLayout>
